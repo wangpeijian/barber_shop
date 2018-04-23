@@ -1,0 +1,133 @@
+@charset "UTF-8";
+@import '../Public';
+
+.page-select-time{
+	
+	.top-block{
+		text-align: center;
+        @include my-fixed(0, auto, 9.5rem);
+		
+		.title-text{
+			font-size: .8rem;
+			padding: 1rem 0;
+		}
+		
+		.time-box{
+			font-size: .8rem;
+			color: $COLOR_MAIN;
+			width: 60%;
+			margin: 0 auto;
+			border-bottom: 1px solid $COLOR_MAIN;
+			padding: 0 0 .5rem 0;
+			
+			.selected-time{
+				
+				
+				&::before{
+					content: " ";
+					display: inline-block;
+					background: url("../../img/select_time_icon.png") center / cover no-repeat;
+					height: .8rem;
+					width: .8rem;
+					margin: 0 .5rem -.1rem 0;
+				}
+			}
+		}
+		
+		.remark{
+			font-size: .7rem;
+			color: $COLOR_UN_ACTIVE;
+			margin: .5rem 0 .7rem 0;
+			
+			&::before{
+				content: ' ';
+				height: .2rem;
+				width: .2rem;
+				border-radius: 50%;
+				display: inline-block;
+				background: $COLOR_UN_ACTIVE;
+				margin: 0 .5rem .2rem 0;
+			}
+		}
+		
+		.day-list{
+			overflow: hidden;
+			border-bottom: $BORDER;
+			border-top: $BORDER;
+			height: 2rem;
+			padding: .3rem 0;
+			
+			.date-item{
+				float: left;
+				width: 20%;
+				text-align: center;
+				font-size: .7rem;
+				
+				.day{
+					display: block;
+					color: $COLOR_BLACK;
+				}
+				
+				.title{
+					display: block;
+					color: $COLOR_UN_ACTIVE;
+				}
+			}
+		}
+	}
+	
+	.page-content{
+		/*@include my-fixed(9.5rem, 2.5rem, auto);*/
+        padding: 9.5rem 2% 2.5rem 2%;
+        overflow: hidden;
+		
+		.time-line{
+			width: 16%;
+			float: left;
+			font-size: .7rem;
+			overflow: hidden;
+			text-align: center;
+			padding: 2%;
+			
+			.item{
+				color: $COLOR_UN_ACTIVE;
+				float: left;
+				width: 100%;
+				border: 1px solid transparent;
+				border-radius: .2rem;
+				padding: .3rem 0;
+				margin: .2rem 0;
+				
+				&.able{
+					color: $COLOR_MAIN;
+					border: 1px solid $COLOR_MAIN;
+				}
+				
+				&.selected{
+					background: $COLOR_MAIN;
+					color: #fff;
+				}
+			}
+		}
+	}
+	
+	.footer-bar{
+		@include my-fixed(auto, 0 , 2.5rem);
+		font-size: .8rem;
+		line-height: 2.5rem;
+		text-align: center;
+		color: #fff;
+		
+		.cancel-btn{
+			background: #f8c4b2;
+			width: 30%;
+			float: left;
+		}
+		
+		.submit-btn{
+			background: $COLOR_MAIN;
+			width: 70%;
+			float: right;
+		}
+	}
+}

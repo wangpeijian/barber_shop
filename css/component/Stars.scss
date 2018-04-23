@@ -1,0 +1,27 @@
+@charset "UTF-8";
+@import "../Public";
+
+.component-stars{
+
+    .star-bar{
+	    height: 2.4rem;
+
+        .box{
+            text-align: center;
+            width: 20%;
+            float: left;
+
+            span{
+                display: inline-block;
+
+                background: url("../../img/star-unactive-icon.png") center / cover no-repeat;
+                height: 2.4rem;
+                width: 2.4rem;
+
+                &.light{
+                    background: url("../../img/star-active-icon.png") center / cover no-repeat;
+                }
+            }
+        }
+    }
+}

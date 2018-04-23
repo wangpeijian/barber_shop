@@ -1,0 +1,30 @@
+@charset "UTF-8";
+@import '../Public';
+
+.page-history{
+	padding: .1rem.5rem;
+	
+	.empty-history-list{
+		width: 4rem;
+		height: 4rem;
+		margin: 50% auto;
+		position: relative;
+		
+		.empty-img{
+			background: url("../../img/empty-order.png") center / cover no-repeat;
+			height: 3rem;
+			width: 3rem;
+			display: block;
+			margin: 0 auto;
+		}
+		
+		.empty-tip{
+			color: $COLOR_UN_ACTIVE;
+			font-size: .7rem;
+			position: absolute;
+			width: 100%;
+			bottom: -1rem;
+			text-align: center;
+		}
+	}
+}

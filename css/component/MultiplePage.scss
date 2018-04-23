@@ -1,0 +1,48 @@
+@charset "UTF-8";
+@import "../Public";
+
+.component-multiple-page{
+
+	.scroll-block{
+		overflow: hidden;
+		height: inherit;
+		@include my-fixed(2.5rem, 2.5rem, auto);
+		@include prefix-content(transform,  translate3d(0,0,0));
+
+		.slide-block{
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			overflow: hidden;
+			height: inherit;
+			width: 400%;
+
+			&.scrolling{
+				@include prefix-content(transition, .3s)
+			}
+
+			.item-block{
+				height: 100%;
+				width: 25%;
+				display: block;
+				float: left;
+				overflow-x: hidden;
+				overflow-y: auto;
+			}
+		}
+	}
+	
+	&.auto-height{
+		.scroll-block{
+			position: static;
+			
+			.slide-block{
+				position: relative;
+				
+				.item-block{
+					height: auto;
+				}
+			}
+		}
+	}
+}

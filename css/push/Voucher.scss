@@ -1,0 +1,82 @@
+@charset "UTF-8";
+@import '../Public';
+
+.page-voucher{
+	
+	.top-bar{
+		height: 2rem;
+		
+		.store-name{
+			font-size: .7rem;
+			color: $COLOR_MAIN;
+			line-height: 2rem;
+			margin: 0 .8rem;
+		}
+		
+		.refresh-btn{
+			background: $COLOR_MAIN;
+			padding: 0 .4rem;
+			border-radius: .2rem;
+			float: right;
+			height: 1rem;
+			font-size: .7rem;
+			margin: .5rem .8rem;
+			color: #fff;
+		}
+	}
+	
+	.service-info{
+		color: $COLOR_UN_ACTIVE;
+		font-size: .7rem;
+		text-align: center;
+		overflow: hidden;
+		border-bottom: $BORDER;
+		padding: 1rem 0;
+		
+		.item{
+			width: 33.3%;
+			float: left;
+			
+			&.with-line{
+				border: $BORDER;
+				border-top: none;
+				border-bottom: none;
+				box-sizing: border-box;
+			}
+			
+			.top{
+				
+			}
+			
+			.center{
+				color: $COLOR_MAIN;
+				font-size: 1rem;
+				font-weight: bold;
+				margin: .5rem 0;
+			}
+			
+			.bottom{
+				
+			}
+		}
+	}
+	
+	.qrcode{
+		margin: 1rem auto;
+		text-align: center;
+	}
+	
+	.order-info{
+		text-align: center;
+		color: $COLOR_UN_ACTIVE;
+		font-size: .6rem;
+		line-height: 1rem;
+		
+		.mark{
+			color: $COLOR_MAIN;
+			font-size: .8rem;
+			line-height: 1.5rem;
+		}
+	}
+}
+

@@ -1,0 +1,77 @@
+@charset "UTF-8";
+@import "../Public";
+
+.component-navigation{
+
+	.navigation-bar{
+		box-sizing: border-box;
+		@include my-fixed(auto, 0, 2.5rem);
+		background: #fff;
+		border-top: 1px solid #ccc;
+		overflow: hidden;
+
+		.item{
+			width: 25%;
+			display: inline-block;
+			font-size: .6rem;
+			float: left;
+			text-align: center;
+			height: 2.5rem;
+
+			.nav-icon{
+				display: inline-block;
+				background: center / cover no-repeat;
+				height: 1rem;
+				width: 1rem;
+				margin: .25rem 0 .1rem 0;
+
+				&.home-icon{
+					background-image: url("../../img/home_icon.png");
+				}
+
+				&.order-icon{
+					background-image: url("../../img/order_icon.png");
+				}
+
+				&.me-icon{
+					background-image: url("../../img/me_icon.png");
+				}
+
+				&.more-icon{
+					background-image: url("../../img/more_icon.png");
+				}
+			}
+
+			.nav-name{
+				display: block;
+				color: $COLOR_UN_ACTIVE;
+			}
+
+			&.active{
+
+				.nav-icon {
+					&.home-icon {
+						background-image: url("../../img/home_icon_active.png");
+					}
+
+					&.order-icon {
+						background-image: url("../../img/order_icon_active.png");
+					}
+
+					&.me-icon {
+						background-image: url("../../img/me_icon_active.png");
+					}
+
+					&.more-icon {
+						background-image: url("../../img/more_icon_active.png");
+					}
+				}
+
+				.nav-name{
+					color: $COLOR_MAIN;
+				}
+			}
+		}
+	}
+
+}

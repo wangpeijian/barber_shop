@@ -1,0 +1,125 @@
+@charset "UTF-8";
+@import '../Public';
+
+.component-confirm-order{
+	
+	.page-content{
+		/*@include my-fixed(0, 2.5rem, auto);*/
+		padding: 0 0 2.5rem 0;
+		
+		.store-name-bar{
+			border: $BORDER;
+			line-height: 2rem;
+			height: 2rem;
+			color: $COLOR_BLACK;
+			padding: 0 0 0 .5rem;
+			font-size: .8rem;
+		}
+		
+		.appointment-info{
+			margin: .8rem .5rem;
+			position: relative;
+			height: 4.4rem;
+			
+			.store-img{
+				height: 4.4rem;
+				width: 4.4rem;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			
+			.detail{
+				color: $COLOR_UN_ACTIVE;
+				font-size: .75rem;
+				padding: 0 0 0 5rem;
+				line-height: 1.5rem;
+			}
+		}
+		
+		.pay-type{
+			font-size: .7rem;
+			line-height: 2rem;
+			padding: 0 .5rem;
+			
+			.pay-label{
+				color: $COLOR_BLACK;
+				
+				&::before{
+					content: " ";
+					display: inline-block;
+					background: url("../../img/pay_type_icon.png") center / cover no-repeat;
+					height: .8rem;
+					width: .8rem;
+					margin: 0 .5rem -.1rem 0;
+				}
+			}
+			
+			.type-name{
+				color: #f8c4b2;
+				float: right;
+			}
+		}
+		
+		.store-local{
+			font-size: .7rem;
+			
+			.local-label{
+				color: $COLOR_BLACK;
+				line-height: 2rem;
+				padding: 0 .5rem;
+				
+				&::before{
+					content: " ";
+					display: inline-block;
+					background: url("../../img/map_icon.png") center / cover no-repeat;
+					height: 1rem;
+					width: 1rem;
+					margin: 0 .3rem -.2rem 0;
+				}
+			}
+			
+			.local-info{
+				border-top: $BORDER;
+				border-bottom: $BORDER;
+				padding: .8rem 0 1.6rem 0;
+				
+				.item{
+					color: $COLOR_UN_ACTIVE;
+					margin: 0 .5rem .8rem .5rem;
+					
+					&::before{
+						content: " ";
+						display: inline-block;
+						background: $COLOR_UN_ACTIVE;
+						height: .2rem;
+						width: .2rem;
+						border-radius: 50%;
+						margin: 0 .4rem .2rem 0;
+					}
+				}
+			}
+		}
+	}
+	
+	.bottom-bar{
+		@include my-fixed(auto, 0, 2.5rem);
+		box-sizing: border-box;
+		border-top: $BORDER;
+		font-size: .8rem;
+		
+		.money{
+			line-height: 2.5rem;
+			color: $COLOR_MAIN;
+			margin: 0 1rem;
+		}
+		
+		.order-btn{
+			line-height: 2.5rem;
+			float: right;
+			background: $COLOR_MAIN;
+			color: #fff;
+			padding: 0 2rem;
+		}
+	}
+}

@@ -1,0 +1,128 @@
+@charset "UTF-8";
+@import '../Public';
+
+.page-wait{
+	
+	.top-bar{
+		height: 2rem;
+		font-size: .6rem;
+		line-height: 2rem;
+		color: #fff;
+		background: $COLOR_MAIN;
+		text-align: center;
+		
+		.store-name{
+			margin: 0 .8rem;
+			float: left;
+		}
+		
+		.logo{
+			display: inline-block;
+			height: 2rem;
+			font-size: .8rem;
+		}
+		
+		.clock{
+			float: right;
+			margin: 0 .8rem;
+		}
+	}
+	
+	.service-info{
+		color: $COLOR_UN_ACTIVE;
+		font-size: .7rem;
+		text-align: center;
+		overflow: hidden;
+		border-bottom: $BORDER;
+		padding: 1rem 0;
+		
+		.item{
+			width: 33.3%;
+			float: left;
+			
+			&.with-line{
+				border: $BORDER;
+				border-top: none;
+				border-bottom: none;
+				box-sizing: border-box;
+			}
+			
+			.top{
+				
+			}
+			
+			.center{
+				color: $COLOR_MAIN;
+				font-size: 1rem;
+				font-weight: bold;
+				margin: .5rem 0;
+			}
+			
+			.bottom{
+				
+			}
+		}
+	}
+	
+	.money{
+		line-height: 2rem;
+		padding: 2rem 0 1rem 0;
+		text-align: center;
+		font-weight: bold;
+		
+		.unit{
+			font-size: .7rem;
+		}
+		
+		.first{
+			font-size: 2rem;
+		}
+		
+		.last{
+			font-size: .9rem;
+		}
+	}
+	
+	.qrcode{
+		margin: 1rem auto;
+		overflow: hidden;
+		text-align: center;
+		font-size: .5rem;
+		color: $COLOR_BLACK;
+		
+		p{
+			clear: both;
+			margin: .5rem 0;
+		}
+		
+		.left{
+			width: 40%;
+			float: left;
+			padding: 0 0 0 1rem;
+		}
+		
+		.right{
+			width: 40%;
+			float: right;
+			overflow: hidden;
+			padding: 0 1rem 0 0;
+			
+			.weichat-QRCode{
+				background: url("../../img/home_icon_active.png") center / cover no-repeat;
+				width: 128px;
+				height: 128px;
+				display: inline-block;
+			}
+		}
+	}
+	
+	.footer{
+		@include my-fixed(auto, 0, 2rem);
+		line-height: 2rem;
+		font-size: .6rem;
+		background: $COLOR_MAIN;
+		color: #fff;
+		text-align: center;
+	}
+}
+

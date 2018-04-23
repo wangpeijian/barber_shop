@@ -1,0 +1,78 @@
+@charset "UTF-8";
+@import '../Public';
+
+.component-order-item{
+
+    .head{
+        line-height: 2rem;
+        font-size: .7rem;
+        padding: 0 .5rem;
+        border-bottom: $BORDER;
+
+        .store-name{
+            color: $COLOR_BLACK;
+        }
+
+        .order-status{
+            color: $COLOR_MAIN;
+            float: right;
+        }
+    }
+
+    .store-info{
+        padding: .8rem .5rem;
+        position: relative;
+        height: 4.4rem;
+        border-bottom: $BORDER;
+
+        .store-img{
+            height: 4.4rem;
+            width: 4.4rem;
+            position: absolute;
+            top: .8rem;
+            left: .5rem;
+        }
+
+        .detail{
+            color: $COLOR_UN_ACTIVE;
+            font-size: .6rem;
+            padding: 0 0 0 5rem;
+            line-height: 1.1rem;
+        }
+    }
+
+    .pay-info{
+        padding: 0 .5rem;
+        line-height: 2rem;
+        border-bottom: $BORDER;
+
+        .label{
+            color: $COLOR_UN_ACTIVE;
+            font-size: .6rem;
+        }
+
+        .money{
+            color: $COLOR_MAIN;
+            font-size: .7rem;
+            float: right;
+        }
+    }
+
+    .btn-bar{
+        padding: .3rem .5rem;
+        line-height: 1.5rem;
+        overflow: hidden;
+        border-bottom: $BORDER;
+
+        .score-btn{
+            display: inline-block;
+            float: right;
+            background: #1c436f;
+            padding: 0 .5rem;
+            border-radius: .2rem;
+            color: #fff;
+            text-align: center;
+            font-size: .7rem;
+        }
+    }
+}

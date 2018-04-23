@@ -1,0 +1,45 @@
+@charset "UTF-8";
+@import 'Public';
+
+.page-order{
+	background: #f7f7f7;
+	
+	.gap{
+		border-top: none;
+	}
+
+	.component-togglabel-tabs{
+		@include my-fixed(0 , auto, 2.5rem);
+		z-index: 1;
+	}
+
+	.component-multiple-page{
+		padding: 2.5rem 0;
+        background: #fff;
+		
+        .empty-order-list{
+            width: 4rem;
+            height: 4rem;
+            margin: 50% auto;
+            position: relative;
+
+            .empty-img{
+                background: url("../img/empty-order.png") center / cover no-repeat;
+                height: 3rem;
+                width: 3rem;
+                display: block;
+                margin: 0 auto;
+            }
+
+            .empty-tip{
+                color: $COLOR_UN_ACTIVE;
+                font-size: .7rem;
+                position: absolute;
+                width: 100%;
+                bottom: -1rem;
+                text-align: center;
+            }
+        }
+
+	}
+}

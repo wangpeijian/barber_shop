@@ -1,0 +1,123 @@
+@charset "UTF-8";
+@import '../Public';
+
+.page-score{
+	
+	.page-content{
+		padding: .75rem .5rem 4rem .5rem;
+		
+		.store-info{
+			position: relative;
+			height: 4.4rem;
+			
+			.store-img{
+				height: 4.4rem;
+				width: 4.4rem;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			
+			.detail{
+				color: $COLOR_UN_ACTIVE;
+				font-size: .75rem;
+				padding: 0 0 0 5rem;
+				
+				.store-name{
+					color: $COLOR_BLACK;
+					margin: 0 0 .5rem 0;
+					font-size: .8rem
+				}
+				
+				.store-slogan{
+					line-height: 1.3rem;
+				}
+			}
+		}
+		
+		.form-title{
+			text-align: center;
+			line-height: 2rem;
+			position: relative;
+			
+			&::before{
+				position: absolute;
+				background: rgba(0,0,0,.1);
+				height: .1rem;
+				width: 90%;
+				left: 5%;
+				top: 50%;
+				content: "";
+				display: inline-block;
+				z-index: -1;
+			}
+			
+			.title{
+				display: inline-block;
+				padding: 0 1rem;
+				background: #FFF;
+				color: $COLOR_UN_ACTIVE;
+				font-size: .8rem;
+			}
+		}
+		
+		.opinion{
+			border: $BORDER;
+			width: 90%;
+			height: 5rem;
+			font-size: .6rem;
+			margin: 1.5rem auto .8rem auto;
+			resize: none;
+			padding: .4rem;
+			display: block;
+		}
+		
+		.phone{
+			border: $BORDER;
+			border-left: none;
+			border-right: none;
+			width: 94%;
+			padding: .4rem;
+			font-size: .6rem;
+			margin: 0 auto;
+			display: block;
+		}
+	}
+
+    .footer-bar{
+        @include my-fixed(auto, 0, 2.5rem);
+        overflow: hidden;
+	    font-size: .8rem;
+	    text-align: center;
+
+        .cancel-btn{
+            width: 50%;
+	        float: left;
+	        line-height: 2.5rem;
+	        background: #F9C4B2;
+	        color: #fff;
+        }
+
+        .submit-btn{
+	        width: 50%;
+	        float: left;
+	        line-height: 2.5rem;
+	        background: $COLOR_MAIN;
+	        color: #fff;
+        }
+    }
+	
+	.component-stars{
+		
+		.star-bar{
+			height: 1.5rem;
+			margin: .8rem auto;
+			width: 80%;
+			
+			span{
+				width: 1.5rem;
+				height: 1.5rem;
+			}
+		}
+	}
+}
